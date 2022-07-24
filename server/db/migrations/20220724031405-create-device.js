@@ -34,7 +34,7 @@ module.exports = {
           model: {
             tableName: "Types",
           },
-          key: "Id",
+          key: "id",
         },
       },
       brandId: {
@@ -43,7 +43,7 @@ module.exports = {
           model: {
             tableName: "Brands",
           },
-          key: "Id",
+          key: "id",
         },
       },
       createdAt: {

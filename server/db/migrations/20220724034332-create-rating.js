@@ -18,7 +18,7 @@ module.exports = {
           model: {
             tableName: "Users",
           },
-          key: "Id",
+          key: "id",
         },
       },
       deviceId: {
@@ -27,7 +27,7 @@ module.exports = {
           model: {
             tableName: "Devices",
           },
-          key: "Id",
+          key: "id",
         },
       },
       createdAt: {

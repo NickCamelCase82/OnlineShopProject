@@ -14,7 +14,7 @@ module.exports = {
           model: {
             tableName: "Baskets",
           },
-          key: "Id",
+          key: "id",
         },
       },
       deviceId: {
@@ -23,7 +23,7 @@ module.exports = {
           model: {
             tableName: "Devices",
           },
-          key: "Id",
+          key: "id",
         },
       },
       createdAt: {

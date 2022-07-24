@@ -14,7 +14,7 @@ module.exports = {
           model: {
             tableName: "Users",
           },
-          key: "Id",
+          key: "id",
         },
       },
       createdAt: {

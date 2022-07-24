@@ -22,7 +22,7 @@ module.exports = {
           model: {
             tableName: "Devices",
           },
-          key: "Id",
+          key: "id",
         },
       },
       createdAt: {
