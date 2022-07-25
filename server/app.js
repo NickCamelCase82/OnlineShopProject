@@ -1,12 +1,19 @@
 require("dotenv").config();
 const express = require("express");
-const dbCheck = require("../server/db/dbConnectionCheck");
+const sequelize = require("./db");
 const PORT = process.env.PORT || 7000;
-
 const app = express();
 
-dbCheck();
+const start = async () => {
+  try {
+    await sequelize.authenticate();
+    await sequelize.sync();
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
+    });
+  } catch (e) {
+    console.log(e);
+  }
+};
 
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
-});
+start();
