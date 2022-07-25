@@ -17,3 +17,5 @@ class ErrorHandler extends Error {
     return new ErrorHandler(403, message);
   }
 }
+
+module.exports = ErrorHandler;
