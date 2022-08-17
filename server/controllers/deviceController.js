@@ -2,7 +2,6 @@ const uuid = require("uuid");
 const path = require("path");
 const { Device } = require("../models/models");
 const errorHandler = require("../error/errorHandler");
-const { type } = require("os");
 
 class DeviceController {
   async create(req, res, next) {
@@ -41,8 +40,8 @@ class DeviceController {
     return res.json(devices);
   }
   async getOne(req, res) {
-    const { oneName } = req.param.id;
-    const oneDevice = await Device.findOne({ where: oneName });
+    const { id } = req.params;
+    const oneDevice = await Device.findOne({ where: { id } });
     return res.json(oneDevice);
   }
 }
