@@ -7,11 +7,11 @@ import {
   SHOP_ROUTE,
 } from "./utils/consts";
 
+import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import Basket from "./pages/Basket";
 import Shop from "./pages/Shop";
-import { Login, Registration } from "./pages/Auth";
-import Device from "./pages/DevicePage";
+import DevicePage from "./pages/DevicePage";
 
 export const authRoutes = [
   {
@@ -43,6 +43,6 @@ export const publicRoutes = [
 
   {
     path: DEVICE_ROUTE + "/:id",
-    Component: Device,
+    Component: DevicePage,
   },
 ];
