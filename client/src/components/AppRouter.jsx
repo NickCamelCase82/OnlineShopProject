@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 //import { authRoutes, publicRoutes } from "../routes";
 import {
   ADMIN_ROUTE,
@@ -14,9 +14,13 @@ import Basket from "../pages/Basket";
 import Admin from "../pages/Admin";
 import Auth from "../pages/Auth";
 import DevicePage from "../pages/DevicePage";
+import { useContext } from "react";
+import { Context } from "../index";
 
 export default function AppRouter() {
-  const isAuth = false;
+  const { user } = useContext(Context);
+
+  console.log("=======>", user);
 
   //   return (
   //     <Routes>
@@ -32,7 +36,7 @@ export default function AppRouter() {
   //   );
   // }
 
-  if (!isAuth) {
+  if (!user.isAuth) {
     return (
       <Routes>
         <Route path={SHOP_ROUTE} element={<Shop />} />
