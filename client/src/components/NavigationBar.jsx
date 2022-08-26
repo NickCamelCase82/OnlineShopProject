@@ -21,8 +21,15 @@ const NavigationBar = observer(() => {
           </NavLink>
           {user.isAuth ? (
             <Nav className="ml-auto" style={{ color: "white" }}>
-              <Button variant={"outline-light"}>Logout</Button>
-              <Button variant={"outline-light"}>Admin</Button>
+              <Button
+                variant={"outline-light"}
+                onClick={() => user.setIsAuth(false)}
+              >
+                Logout
+              </Button>
+              <Button variant={"outline-light"} className="ml-2">
+                Admin
+              </Button>
             </Nav>
           ) : (
             <Nav className="ml-auto" style={{ color: "white" }}>
@@ -32,7 +39,9 @@ const NavigationBar = observer(() => {
               >
                 Login
               </Button>
-              <Button variant={"outline-light"}>Registration</Button>
+              <Button variant={"outline-light"} className="ml-2">
+                Registration
+              </Button>
             </Nav>
           )}
         </Container>
