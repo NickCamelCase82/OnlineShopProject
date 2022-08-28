@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Form, Button, Row } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
+import { Container, Form, Row, Button, Card } from "react-bootstrap";
 import { NavLink, useLocation } from "react-router-dom";
 import { LOGIN_ROUTE, REGISTRATION_ROUTE } from "../utils/consts";
 
