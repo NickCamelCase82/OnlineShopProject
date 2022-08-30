@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import BrandBar from "../components/BrandBar";
+import DeviceList from "../components/DeviceList";
 import TypesBar from "../components/TypesBar";
 
 export default function Shop() {
@@ -12,6 +13,7 @@ export default function Shop() {
         </Col>
         <Col md={9}>
           <BrandBar />
+          <DeviceList />
         </Col>
       </Row>
     </Container>
