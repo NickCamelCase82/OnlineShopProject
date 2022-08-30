@@ -7,17 +7,16 @@ import { Context } from "../index";
 const TypesBar = observer(() => {
   const { device } = useContext(Context);
 
-  //console.log("======>", device._types);
   return (
     <ListGroup>
-      {device._types.map((e) => (
+      {device.types.map((type) => (
         <ListGroup.Item
           style={{ cursor: "pointer" }}
-          active={e.id === device._selectedType.id}
-          onClick={() => device._selectedType(e)}
-          key={e.id}
+          active={type.id === device.selectedType.id}
+          onClick={() => device.setSelectedType(type)}
+          key={type.id}
         >
-          {e.name}
+          {type.name}
         </ListGroup.Item>
       ))}
     </ListGroup>

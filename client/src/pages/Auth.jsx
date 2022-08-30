@@ -17,7 +17,7 @@ export default function Auth() {
         <Form className="d-flex flex-column">
           <Form.Control className="mt-3" placeholder="Enter your email..." />
           <Form.Control className="mt-3" placeholder="Enter your password..." />
-          <Row className="d-flex justify-content-between mt-3">
+          <Row className="d-flex justify-content-between mt-3 pl-3 pr-3">
             {isLogin ? (
               <div>
                 Not registered?
@@ -29,7 +29,7 @@ export default function Auth() {
                 <NavLink to={LOGIN_ROUTE}>Log in</NavLink>
               </div>
             )}
-            <Button className="mt-3 pl-3 pr-3" variant={"outline-success"}>
+            <Button variant={"outline-success"}>
               {isLogin ? "Enter" : "Registration"}
             </Button>
           </Row>

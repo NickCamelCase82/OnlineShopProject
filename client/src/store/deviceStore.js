@@ -12,6 +12,8 @@ export default class DeviceStore {
     this._brands = [
       { id: 1, name: "Samsung" },
       { id: 2, name: "Apple" },
+      { id: 3, name: "Sharp" },
+      { id: 4, name: "Lenovo" },
     ];
 
     this._devices = [
@@ -40,19 +42,19 @@ export default class DeviceStore {
     this._selectedType = type;
   }
 
-  getTypes() {
+  get types() {
     return this._types;
   }
 
-  getBrands() {
+  get brands() {
     return this._brands;
   }
 
-  getDevices() {
+  get devices() {
     return this._devices;
   }
 
-  getSelectedType() {
+  get selectedType() {
     return this._selectedType;
   }
 }
