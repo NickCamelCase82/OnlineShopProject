@@ -42,8 +42,8 @@ export default function AppRouter() {
         <Route path={SHOP_ROUTE} element={<Shop />} />
         <Route path={LOGIN_ROUTE} element={<Auth />} />
         <Route path={REGISTRATION_ROUTE} element={<Auth />} />
-        <Route path={DEVICE_ROUTE} element={<DevicePage />} />
         <Route path="*" element={<Shop />} />
+        <Route path={DEVICE_ROUTE} element={<DevicePage />} />
       </Routes>
     );
   } else {
@@ -52,10 +52,10 @@ export default function AppRouter() {
         <Route path={SHOP_ROUTE} element={<Shop />} />
         <Route path={LOGIN_ROUTE} element={<Auth />} />
         <Route path={REGISTRATION_ROUTE} element={<Auth />} />
-        <Route path={DEVICE_ROUTE} element={<DevicePage />} />
         <Route path={BASKET_ROUTE} element={<Basket />} />
         <Route path={ADMIN_ROUTE} element={<Admin />} />
         <Route path="*" element={<Shop />} />
+        <Route path={DEVICE_ROUTE} element={<DevicePage />} />
       </Routes>
     );
   }

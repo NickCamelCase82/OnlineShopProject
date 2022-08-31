@@ -20,6 +20,12 @@ export default class DeviceStore {
       { id: 1, name: "Sams 123", price: 500, rating: 0 },
       { id: 2, name: "iPhone13", price: 1300, rating: 0 },
       { id: 3, name: "iPad", price: 800, rating: 0 },
+      { id: 4, name: "Sams 123", price: 500, rating: 0 },
+      { id: 5, name: "iPhone13", price: 1300, rating: 0 },
+      { id: 6, name: "iPad", price: 800, rating: 0 },
+      { id: 7, name: "Sams 123", price: 500, rating: 0 },
+      { id: 8, name: "iPhone13", price: 1300, rating: 0 },
+      { id: 9, name: "iPad", price: 800, rating: 0 },
     ];
 
     this._selectedType = {};
